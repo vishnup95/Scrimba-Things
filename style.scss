@@ -1,0 +1,67 @@
+$font-stack: "Source Sans Pro", sans-serif;
+html {
+  font-size: 14px;
+}
+
+body {
+  text-align: center;
+}
+
+h1 {
+  font-family: $font-stack;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 25%;
+  min-width: 250px;
+  margin: 0 auto;
+  justify-content: center;
+
+  label {
+    font-family: $font-stack;
+    font-size: 1.5rem;
+  }
+
+  input {
+    margin-top: 0.75rem;
+    margin-bottom: 2rem;
+    // width: 50%;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+    padding: 10px;
+    font-family: $font-stack;
+    transition: font-size 0.75s ease;
+    &::placeholder {
+      transition: all 0.75s ease;
+      font-size: small;
+    }
+
+    &:hover {
+      outline: black auto 1px;
+      transition: all 0.75s ease;
+      &::placeholder {
+        font-size: medium;
+      }
+    }
+  }
+
+  button {
+    width: 150px;
+    margin: 0 auto;
+    padding: 0.75rem 1rem;
+    font-family: $font-stack;
+    font-size: medium;
+    background: linear-gradient(#ff713b, #ffa51d);
+    border: none;
+    font-weight: 900;
+    transition: font-size 0.75s ease;
+    &:hover {
+      font-size: large;
+    }
+  }
+}
