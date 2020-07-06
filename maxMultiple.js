@@ -1,13 +1,11 @@
 function maxMultiple(divisor, bound) {
   //  write code here..
-  let dividers = [];
-  for (let i = 1; i <= bound / 2; i++) {
-    if (i * divisor <= bound) {
-      dividers.push(i * divisor);
-    }
-  }
-  return dividers.reduce((acc, curr) => Math.max(acc, curr));
+  let rem = bound % divisor;
+
+  return bound - rem;
 }
+
+// There is a very simple solution involving modulo
 
 /**
  * Test Suite

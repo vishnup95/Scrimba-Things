@@ -1,0 +1,87 @@
+/* DON'T TOUCH THIS! */
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: "Source Sans Pro", sans-serif;
+  color: white;
+  background: #363636;
+}
+
+.title {
+  font-size: 2.75rem;
+  text-transform: uppercase;
+  margin: 0.5em;
+  width: 60%;
+}
+
+.text {
+  font-size: 1.25rem;
+  margin: 0.5em;
+  width: 60%;
+}
+
+input,
+button {
+  display: block;
+  margin: 0.5em auto;
+  padding: 0.25em;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1.25rem;
+}
+
+input {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+button {
+  border: none;
+  text-transform: uppercase;
+  padding: 0.5em;
+  background: #2759d9;
+  color: white;
+  border-radius: 0.5rem;
+}
+
+/* DON'T TOUCH THIS! */
+
+/* ==========================
+	Write your solution here!
+   ========================== */
+
+body {
+  background-image: url("https://brainworldmagazine.com/wp-content/uploads/2019/09/BusinessMeeting.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #303033;
+  background-blend-mode: multiply;
+  overflow: hidden;
+}
+
+input {
+  transition: transform 0.5s ease;
+  &:focus {
+    outline: 1px solid black;
+  }
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+button {
+  cursor: pointer;
+  transition: transform 0.5s linear;
+  &:hover {
+    transform: scale(1.1);
+    background-color: #4b75de;
+    color: black;
+  }
+  &:focus {
+    outline: none;
+  }
+}
